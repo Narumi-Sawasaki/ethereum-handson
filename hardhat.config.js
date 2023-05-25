@@ -1,14 +1,14 @@
 require("@nomiclabs/hardhat-waffle");
 require('dotenv').config();
 
-const { SEPOLIA_RPC_URL,PRIVATE_KEY } = process.env;
+const { API_END_POINT, PRIVATE_KEY } = process.env;
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
   solidity: "0.8.18",
 	networks: {
 		sepolia: {
-			url: SEPOLIA_RPC_URL,
+			url: API_END_POINT,
 			accounts: [PRIVATE_KEY],
 		}
 	},
