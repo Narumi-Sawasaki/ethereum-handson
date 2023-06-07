@@ -10,7 +10,7 @@ describe("Taking oath contract", function () {
 		expect(fetchedOath).to.equal("");
 
 		const oath =  "gorilla"
-		await contract.takeAnOath(owner.address, oath);
+		await contract.setOath(owner.address, oath);
 		fetchedOath = await contract.getOath(owner.address);
 		expect(fetchedOath).to.equal(oath);
 	});

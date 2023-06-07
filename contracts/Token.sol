@@ -1,8 +1,8 @@
 pragma solidity ^0.8.18;
 
 contract Token {
-	string public name = "My Hardhat Token";
-	string public symbol = "MHT";
+	string public name = "Omosiro Token";
+	string public symbol = "OST";
 
 	uint256 public totalSupply = 1000000;
 
